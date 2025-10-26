@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krench Chicken - Restoran Ayam Cepat Saji</title>
+    <link rel="stylesheet" href="beranda.css">
+    <link rel="stylesheet" href="../asset/navigation.css">
+    <link rel="stylesheet" href="../asset/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../asset/navigation.js" defer></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../Beranda/beranda.html"><img src="/asset/logo.png" alt="Krench Chicken Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Beranda/beranda.html" class="active">Beranda</a></li>
+                    <li><a href="../Menu/Menu.html">Menu</a></li>
+                    <li><a href="../Event/Event.html">Event</a></li>
+                    <li><a href="../Promo/promo.html">Promo</a></li>
+                    <li><a href="../kemitraan/kemitraan.html">Kemitraan</a></li>
+                    <li><a href="../Berita/berita.html">Berita</a></li>
+                    <li><a href="../Kontak/Kontak.html">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="../asset/Slide_1.png" alt="Promo Spesial">
+                <div class="slide-content">
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../asset/Slide_2.png" alt="Menu Favorit">
+                <div class="slide-content">
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../asset/Slide_3.png" alt="Outlet Baru">
+                <div class="slide-content">
+                </div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="tentang-kami">
+        <div class="container">
+            <h2 class="section-title">Tentang Krench Chicken</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/asset/2.jpg" alt="Tentang Krench Chicken">
+                </div>
+                <div class="about-text">
+                    <p>Krench Chicken adalah restoran ayam cepat saji yang menyajikan ayam goreng dengan resep rahasia yang lezat dan renyah. Kami berkomitmen untuk menyediakan makanan berkualitas tinggi dengan harga terjangkau.</p>
+                    <p>Didirikan sejak tahun 2024, Krench Chicken telah menjadi pilihan utama keluarga Indonesia untuk menikmati hidangan ayam goreng yang lezat. Dengan bumbu khas dan teknik memasak yang sempurna, kami menjamin setiap gigitan akan membuat Anda ketagihan.</p>
+                    <a href="../Kontak/Kontak.html" class="btn">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section class="menu-highlights">
+        <div class="container">
+            <h2 class="section-title">Menu Favorit</h2>
+            <div class="menu-cards">
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="/asset/ChatGPT Image Apr 26, 2025, 05_37_26 PM.png" alt="Paket Super 7000">
+                    </div>
+                    <div class="card-content">
+                        <h3>Paket Combo</h3>
+                        <p>Nasi box + Sayap/Paha Bawah</p>
+                        <p class="price">Rp 15.000</p>
+                        <button class="btn-order">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="/asset/comeice.png" alt="Paket Duo 6000">
+                    </div>
+                    <div class="card-content">
+                        <h3>Paket Comeice 1</h3>
+                        <p>Nasi + Sayap + Icecream + Teh Nusantara M</p>
+                        <p class="price">Rp 6.000</p>
+                        <button class="btn-order">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="/asset/dada ayam.png" alt="Paket Keluarga">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ayam Dada</h3>
+                        <p>Ayam Bagian Dada</p>
+                        <p class="price">Rp 11.000</p>
+                        <button class="btn-order">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="/asset/sambal rendang.png" alt="Paket Spesial">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sambal Rendang</h3>
+                        <p>Sambal Rendang Krench Chicken</p>
+                        <p class="price">Rp 5.000</p>
+                        <button class="btn-order">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="../Menu/Menu.html" class="btn">Lihat Semua Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="/asset/1.jpg" alt="Suasana Restoran">
+                    <div class="featured-text">
+                        <h2>Beri Senyuman</h2>
+                        <p>Krench Chicken berkomitmen untuk memberikan rasa dan kualitas Ayam yang terbaik kepada mereka agar mereka tersenyum.</p>
+                    </div>
+                    <a href="../Kontak/Kontak.html" class="btn featured-btn">Kunjungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="container">
+            <h2 class="section-title">Lokasi Kami</h2>
+            <div class="map-container">
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.591633459686!2d106.73837937480624!3d-6.573111093420273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5001dc5e9eb%3A0x8e6a1abfd83eecb1!2sKrench%20Fried%20Chicken%20Dramaga%20Caringin!5e0!3m2!1sen!2smy!4v1749922113045!5m2!1sen!2smy" width="100%" height="450" style="border:0;margin:0;padding:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-info">
+                    <h3>Krench Chicken Pusat</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Pemuda No.21, RT.03/RW.05, Margajaya, Kec. Bogor Bar., Kota Bogor, Jawa Barat 16116, Indonesia</p>
+                    <p><i class="fas fa-phone"></i> +6285282945604</p>
+                    <p><i class="fas fa-clock"></i> Senin-Jumat: 06:00 - 22:00</p>
+                    <p><i class="fas fa-clock"></i> Sabtu-Minggu: 08:00 - 20:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join-us">
+        <div class="container">
+            <h2>Bergabung Dengan Kami</h2>
+            <p>Tertarik menjadi mitra Krench Chicken? Dapatkan informasi lengkap sekarang!</p>
+            <a href="https://wa.me/6281234567890" class="btn btn-large">Hubungi Kami via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-minimal">
+        <div class="container footer-inner">
+            <a href="../Beranda/beranda.html" class="footer-logo">
+                <img src="../asset/logo.png" alt="Krench Chicken Logo">
+            </a>
+            <nav class="footer-nav">
+                <a href="../Beranda/beranda.html">Beranda</a>
+                <a href="../Menu/menu.html">Menu</a>
+                <a href="../kemitraan/kemitraan.html">Kemitraan</a>
+                <a href="../Kontak/kontak.html">Kontak</a>
+                <a href="../Berita/berita.html">Berita</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="TikTok Krench Chicken"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="Facebook Krench Chicken"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram Krench Chicken"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube Krench Chicken"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="beranda.js"></script>
+    <script src="../asset/navigation.js"></script>
+</body>
+</html>

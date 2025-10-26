@@ -1,0 +1,125 @@
+:root {
+    --footer-text: #fff;
+    --footer-accent: #f18b60;
+    --footer-accent-light: rgba(241, 139, 96, 0.12);
+}
+
+.footer-minimal {
+    background: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background-image: repeating-linear-gradient(
+        90deg,d
+        rgba(255, 200, 200, 0.25) 0 36px,
+        rgba(255, 255, 255, 0.95) 36px 72px
+    );
+}
+
+.footer-minimal .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 32px 0;
+    flex-wrap: wrap;
+}
+
+.footer-minimal .footer-logo img {
+    height: 58px;
+    width: auto;
+    display: block;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--footer-text);
+    position: relative;
+    padding-bottom: 6px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--footer-accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+    color: var(--footer-accent);
+    transform: translateY(-2px);
+}
+
+.footer-nav a:hover::after,
+.footer-nav a:focus-visible::after {
+    transform: scaleX(1);
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-social a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgba(241, 139, 96, 0.35);
+    background: var(--footer-accent-light);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--footer-text);
+    font-size: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+    color: var(--footer-accent);
+    border-color: var(--footer-accent);
+    background: #fff;
+    transform: translateY(-4px);
+}
+
+.footer-social i {
+    pointer-events: none;
+}
+
+@media (max-width: 900px) {
+    .footer-minimal .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-social a {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}

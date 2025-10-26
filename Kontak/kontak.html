@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Krench Chicken</title>
+    <link rel="stylesheet" href="kontak.css">
+    <link rel="stylesheet" href="../asset/navigation.css">
+    <link rel="stylesheet" href="../asset/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Maps Embed - Sama seperti di Beranda -->
+    <script>
+        // Load Google Maps iframe seperti di Beranda
+        function loadGoogleMapsIframe() {
+            const mapElement = document.getElementById('map');
+            if (mapElement) {
+                // Hide loading indicator
+                const loadingIndicator = mapElement.querySelector('.map-loading-indicator');
+                if (loadingIndicator) {
+                    loadingIndicator.style.display = 'none';
+                }
+                
+                // Create iframe seperti di Beranda
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.591633459686!2d106.73837937480624!3d-6.573111093420273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5001dc5e9eb%3A0x8e6a1abfd83eecb1!2sKrench%20Fried%20Chicken%20Dramaga%20Caringin!5e0!3m2!1sen!2smy!4v1749922113045!5m2!1sen!2smy';
+                iframe.width = '100%';
+                iframe.height = '400';
+                iframe.style.border = '0';
+                iframe.style.borderRadius = '15px';
+                iframe.allowFullscreen = true;
+                iframe.loading = 'lazy';
+                iframe.referrerPolicy = 'no-referrer-when-downgrade';
+                
+                mapElement.appendChild(iframe);
+                console.log('Google Maps iframe loaded successfully');
+            }
+        }
+        
+        // Load iframe when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadGoogleMapsIframe);
+        } else {
+            loadGoogleMapsIframe();
+        }
+    </script>
+    <script src="../asset/navigation.js" defer></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../Beranda/beranda.html"><img src="../asset/logo.png" alt="Krench Chicken Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Beranda/beranda.html">Beranda</a></li>
+                    <li><a href="../Menu/menu.html">Menu</a></li>
+                    <li><a href="../Event/event.html">Event</a></li>
+                    <li><a href="../Promo/promo.html">Promo</a></li>
+                    <li><a href="../kemitraan/kemitraan.html">Kemitraan</a></li>
+                    <li><a href="../Berita/berita.html">Berita</a></li>
+                    <li><a href="../Kontak/kontak.html" class="active">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <h1>Kontak Kami</h1>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <h2 class="section-title">Lokasi Kami</h2>
+            <div class="map-container">
+                <div id="map">
+                    <div class="map-loading-indicator">
+                        <div class="loading-spinner"></div>
+                        <p>Memuat peta...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Form Section -->
+    <section class="partnership-section">
+        <div class="container">
+            <div class="partnership-content">
+                <div class="partnership-image">
+                    <img src="../asset/dada ayam.png" alt="Krench Chicken Burger">
+                </div>
+                <div class="partnership-form">
+                    <h2>Bergabung dengan Kemitraan kami</h2>
+                    <p class="form-description">TIM kami akan segera menghubungi anda setelah selesai mengisi formula ini</p>
+                    <form class="partnership-form-content">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nama" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Nama Lengkap" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" placeholder="Alamat Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="No Telefon" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Alamat" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Request!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Footer -->
+    <footer class="footer-minimal">
+        <div class="container footer-inner">
+            <a href="../Beranda/beranda.html" class="footer-logo">
+                <img src="../asset/logo.png" alt="Krench Chicken Logo">
+            </a>
+            <nav class="footer-nav">
+                <a href="../Beranda/beranda.html">Beranda</a>
+                <a href="../Menu/menu.html">Menu</a>
+                <a href="../kemitraan/kemitraan.html">Kemitraan</a>
+                <a href="../Kontak/kontak.html">Kontak</a>
+                <a href="../Berita/berita.html">Berita</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="TikTok Krench Chicken"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="Facebook Krench Chicken"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram Krench Chicken"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube Krench Chicken"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

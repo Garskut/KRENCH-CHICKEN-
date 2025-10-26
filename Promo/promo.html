@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Krench Chicken - Penawaran Spesial</title>
+    <link rel="stylesheet" href="promo.css">
+    <link rel="stylesheet" href="../asset/navigation.css">
+    <link rel="stylesheet" href="../asset/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../asset/navigation.js" defer></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../Beranda/beranda.html"><img src="../asset/logo.png" alt="Krench Chicken Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Beranda/beranda.html">Beranda</a></li>
+                    <li><a href="../Menu/Menu.html">Menu</a></li>
+                    <li><a href="../Event/Event.html">Event</a></li>
+                    <li><a href="../Promo/promo.html" class="active">Promo</a></li>
+                    <li><a href="../kemitraan/kemitraan.html">Kemitraan</a></li>
+                    <li><a href="../Berita/berita.html">Berita</a></li>
+                    <li><a href="../Kontak/Kontak.html">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Promo Spesial Krench Chicken</h1>
+            <p>Nikmati berbagai penawaran menarik untuk menu favorit Anda</p>
+        </div>
+    </section>
+
+    <!-- Promo Items -->
+    <section class="promo-items">
+        <div class="container">
+            <h2 class="section-title">Promo Terbaru</h2>
+            
+            <!-- Promo Item 1 -->
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="../asset/1.jpg" alt="Paket Malam">
+                </div>
+                <div class="promo-content">
+                    <h3>PAKET MALAM</h3>
+                    <p>Nikmati 2 Potong Ayam Goreng dengan segelas minuman segar. Promo berlaku setiap hari mulai pukul 18.00 - 22.00 WIB.</p>
+                    <div class="promo-buttons">
+                        <a href="#" class="btn">Pesan Sekarang</a>
+                        <a href="#" class="btn btn-outline syarat-btn" data-promo="paket-malam">Syarat</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Promo Item 2 -->
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="../asset/2.jpg" alt="Diskon Bulanan">
+                </div>
+                <div class="promo-content">
+                    <h3>DISKON BULANAN</h3>
+                    <p>Nikmati diskon 20% untuk pembelian Krench Chicken sandwich dengan menggunakan kode promo "KRENCHSANDWICH".</p>
+                    <div class="promo-buttons">
+                        <a href="#" class="btn">Pesan Sekarang</a>
+                        <a href="#" class="btn btn-outline syarat-btn" data-promo="diskon-bulanan">Syarat</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Promo Item 3 -->
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="../asset/1.jpg" alt="Beli 2 Gratis 1">
+                </div>
+                <div class="promo-content">
+                    <h3>BELI 2 GRATIS 1</h3>
+                    <p>Beli 2 porsi ayam goreng ukuran apa saja, dapatkan 1 porsi ayam goreng ukuran regular secara gratis. Promo berlaku setiap hari Selasa.</p>
+                    <div class="promo-buttons">
+                        <a href="#" class="btn">Pesan Sekarang</a>
+                        <a href="#" class="btn btn-outline syarat-btn" data-promo="beli2-gratis1">Syarat</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Promo Item 4 -->
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="../asset/2.jpg" alt="Family Everything">
+                </div>
+                <div class="promo-content">
+                    <h3>FAMILY EVERYTHING</h3>
+                    <p>Paket keluarga lengkap dengan 8 potong ayam, 4 nasi, dan 4 minuman. Hemat hingga 25% dari harga normal.</p>
+                    <div class="promo-buttons">
+                        <a href="#" class="btn">Pesan Sekarang</a>
+                        <a href="#" class="btn btn-outline syarat-btn" data-promo="family-everything">Syarat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Syarat -->
+    <div class="modal" id="syaratModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title">Syarat dan Ketentuan</h3>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Join Us Section -->
+    <section class="join-us">
+        <div class="container">
+            <h2>Bergabung Dengan Kami...</h2>
+            <p>Tertarik menjadi mitra Krench Chicken? Dapatkan informasi lengkap sekarang!</p>
+            <a href="https://wa.me/6281234567890" class="btn btn-large">Hubungi Kami via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-minimal">
+        <div class="container footer-inner">
+            <a href="../Beranda/beranda.html" class="footer-logo">
+                <img src="../asset/logo.png" alt="Krench Chicken Logo">
+            </a>
+            <nav class="footer-nav">
+                <a href="../Beranda/beranda.html">Beranda</a>
+                <a href="../Menu/menu.html">Menu</a>
+                <a href="../kemitraan/kemitraan.html">Kemitraan</a>
+                <a href="../Kontak/kontak.html">Kontak</a>
+                <a href="../Berita/berita.html">Berita</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="TikTok Krench Chicken"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="Facebook Krench Chicken"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram Krench Chicken"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube Krench Chicken"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="promo.js"></script>
+</body>
+</html>

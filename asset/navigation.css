@@ -1,0 +1,113 @@
+/* Navbar Left Alignment untuk semua halaman */
+nav ul {
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+
+nav ul li {
+    text-align: left !important;
+}
+
+/* Navigasi Mobile dengan Animasi */
+@media (max-width: 768px) {
+    /* Hamburger Menu */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 1001;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+    
+    .hamburger span {
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        transform-origin: center;
+    }
+    
+    /* Transformasi hamburger menjadi X */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    
+    /* Animasi slide menu */
+    nav ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        padding: 80px 20px 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+    }
+    
+    nav ul.active {
+        transform: translateY(0);
+    }
+    
+    nav ul li {
+        margin: 15px 0;
+        text-align: left;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+        transition-delay: 0.1s;
+    }
+    
+    nav ul li a {
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        position: relative;
+        padding: 5px 0;
+        display: inline-block;
+        z-index: 10;
+        pointer-events: auto;
+    }
+    
+    nav ul li a:hover, nav ul li a.active {
+        color: #F9B906;
+    }
+    
+    nav ul.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    nav ul.active li:nth-child(1) { transition-delay: 0.1s; }
+    nav ul.active li:nth-child(2) { transition-delay: 0.2s; }
+    nav ul.active li:nth-child(3) { transition-delay: 0.3s; }
+    nav ul.active li:nth-child(4) { transition-delay: 0.4s; }
+    nav ul.active li:nth-child(5) { transition-delay: 0.5s; }
+    nav ul.active li:nth-child(6) { transition-delay: 0.6s; }
+    nav ul.active li:nth-child(7) { transition-delay: 0.7s; }
+}
+
+/* Epilogue variable style class */
+.epilogue-variable {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
